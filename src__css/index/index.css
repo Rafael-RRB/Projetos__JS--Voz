@@ -68,9 +68,10 @@
 
                 .label__input {
                     width: 100%;
-                    padding: 0 1rem;
+                    padding: 1em 1rem;
                     border-radius: 1rem;
                     border: .2rem solid var(--cor-primaria);
+                    font-size: 1.4rem;
                 }
 
             .formulario__botao {
@@ -194,7 +195,10 @@
                         font-size: 2rem;
                     }
     
-                    .label__input {}
+                    .label__input {
+                        font-size: 2rem;
+                    }
+
                 .formulario__botao {}
         .principal__vitoria {}
     
@@ -258,7 +262,10 @@
                         font-size: 2.6rem;
                     }
     
-                    .label__input {}
+                    .label__input {
+                        font-size: 2.6rem;
+                    }
+
                 .formulario__botao {}
         .principal__vitoria {}
     
@@ -310,7 +317,11 @@
     
     .principal {}
         .principal__prejogo {}
-            .prejogo__formulario {}
+
+            .prejogo__formulario {
+                width: 55%;
+                margin: 0 auto;
+            }
 
                 .formulario__titulo {
                     font-size: 4.8rem;
@@ -322,7 +333,10 @@
                         font-size: 3.2rem;
                     }
     
-                    .label__input {}
+                    .label__input {
+                        font-size: 3.2rem;
+                    }
+
                 .formulario__botao {}
         .principal__vitoria {}
     
@@ -386,7 +400,10 @@
                         font-size: 3.8rem;
                     }
     
-                    .label__input {}
+                    .label__input {
+                        font-size: 3.8rem;
+                    }
+
                 .formulario__botao {}
         .principal__vitoria {}
     

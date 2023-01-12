@@ -2,8 +2,8 @@ import { numeroAleatorio } from "./numeroAleatorio.js";
 
 // Preloads
 // Audio
-window.somErro = new Audio("../se/419023__jacco18__acess-denied-buzz.mp3");
-window.somAcerto = new Audio("../se/538149__fupicat__notification.wav");
+window.somErro = new Audio("/se/419023__jacco18__acess-denied-buzz.mp3");
+window.somAcerto = new Audio("/se/538149__fupicat__notification.wav");
 
 // Isso reseta o audio, evitando que ações "pule" os efeitos sonoros.
 window.tocaAudio = audio => {
