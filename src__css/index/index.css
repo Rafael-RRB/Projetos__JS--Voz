@@ -1,0 +1,430 @@
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 5% 0;
+}
+
+.cabecalho {
+    margin-bottom: 5rem;
+}
+
+    .cabecalho__titulo {
+        font-size: 2.8rem;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    .cabecalho__jogador {
+        font-size: 2.4rem;
+        text-align: center;
+        transition: all, 500ms;
+    }
+
+.principal {
+    margin-bottom: 5rem;
+}
+
+    .principal__prejogo {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        padding: 5rem 0;
+        top: 0;
+        left: 0;
+        background: var(--cor-quartenaria);
+    }
+
+        .prejogo__formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+            .formulario__titulo {
+                font-size: 3rem;
+                margin-bottom: 5rem;
+            }
+
+            .formulario__label {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 1rem;
+                margin-bottom: 3rem;
+            }
+
+                .label__titulo {
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
+
+                .label__input {
+                    width: 100%;
+                    padding: 0 1rem;
+                    border-radius: 1rem;
+                    border: .2rem solid var(--cor-primaria);
+                }
+
+            .formulario__botao {
+                width: 50%;
+                border-radius: 1rem;
+                border: .2rem solid var(--cor-primaria);
+            }
+
+    .principal__vitoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding: 5rem 0;
+        background-color: var(--cor-quartenaria);
+    }
+
+        .vitoria__titulo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .vitoria__subtitulo {
+            font-size: 2.4rem;
+        }
+        
+            .subtitulo__destaque {
+                font-weight: 900;
+            }
+        
+        .vitoria__botao {
+            width: 50%;
+            border-radius: 1rem;
+            border: .2rem solid #fff;
+            color: #fff;
+            background-color: var(--cor-primaria);
+            margin: 5rem 0;
+        }
+
+
+    .principal__chute {
+
+    }
+
+        .chute__titulo {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+
+            .titulo--inicial {
+                margin-bottom: 0;
+            }
+
+        .chute__escolha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 2em;
+            width: fit-content;
+            height: 2em;
+            font-size: 5rem;
+            text-align: center;
+            padding: 0 .5em;
+            margin: 0 auto 2rem auto;
+            border: .3rem outset var(--cor-quartenaria);   
+        }
+
+        .chute__resultado {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+            .resultado__numero {
+                font-weight: 900;
+            }
+
+.rodape {
+}
+
+    .rodape__resultado {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+        .resultado--menor, .resultado--maior {
+            font-weight: 900;
+        }
+
+@media screen and (min-width: 576px) {
+    .corpo {
+    }
+    
+    .cabecalho {}
+    
+        .cabecalho__titulo {
+            font-size: 3.4rem;
+        }
+    
+        .cabecalho__jogador {
+            font-size: 3rem;
+        }
+    
+    .principal {}
+        .principal__prejogo {}
+            .prejogo__formulario {}
+
+                .formulario__titulo {
+                    font-size: 3.6rem;
+                }
+
+                .formulario__label {}
+    
+                    .label__titulo {
+                        font-size: 2rem;
+                    }
+    
+                    .label__input {}
+                .formulario__botao {}
+        .principal__vitoria {}
+    
+            .vitoria__titulo {
+                font-size: 3.6rem;
+            }
+            
+            .vitoria__subtitulo {
+                font-size: 3rem;
+            }
+            
+                .subtitulo__destaque {}
+            .vitoria__botao {}
+        .principal__chute {}
+    
+            .chute__titulo {
+                font-size: 3rem;
+            }
+    
+                .titulo--inicial {}
+            .chute__escolha {}
+    
+            .chute__resultado {
+                font-size: 2rem;
+            }
+    
+                .resultado__numero {}
+    .rodape {}
+    
+        .rodape__resultado {
+            font-size: 2.6rem;
+        }
+    
+            .resultado--menor, .resultado--maior {}
+}
+@media screen and (min-width: 767px) {
+    .corpo {
+    }
+    
+    .cabecalho {}
+    
+        .cabecalho__titulo {
+            font-size: 4rem;
+        }
+    
+        .cabecalho__jogador {
+            font-size: 3.6rem;
+        }
+    
+    .principal {}
+        .principal__prejogo {}
+            .prejogo__formulario {}
+
+                .formulario__titulo {
+                    font-size: 4.2rem;
+                }
+
+                .formulario__label {}
+    
+                    .label__titulo {
+                        font-size: 2.6rem;
+                    }
+    
+                    .label__input {}
+                .formulario__botao {}
+        .principal__vitoria {}
+    
+            .vitoria__titulo {
+                font-size: 4.2rem;
+            }
+            
+            .vitoria__subtitulo {
+                font-size: 3.6rem;
+            }
+            
+                .subtitulo__destaque {}
+            .vitoria__botao {}
+        .principal__chute {}
+    
+            .chute__titulo {
+                font-size: 3.6rem;
+            }
+    
+                .titulo--inicial {}
+            .chute__escolha {}
+    
+            .chute__resultado {
+                font-size: 2.6rem;
+            }
+    
+                .resultado__numero {}
+    .rodape {}
+    
+        .rodape__resultado {
+            font-size: 3.2rem;
+        }
+    
+            .resultado--menor, .resultado--maior {}
+}
+
+@media screen and (min-width: 992px) {
+    .corpo {
+    }
+    .cabecalho {}
+    
+        .cabecalho__titulo {
+            font-size: 4.6rem;
+        }
+    
+        .cabecalho__jogador {
+            font-size: 4.2rem;
+        }
+    
+    .principal {}
+        .principal__prejogo {}
+            .prejogo__formulario {}
+
+                .formulario__titulo {
+                    font-size: 4.8rem;
+                }
+
+                .formulario__label {}
+    
+                    .label__titulo {
+                        font-size: 3.2rem;
+                    }
+    
+                    .label__input {}
+                .formulario__botao {}
+        .principal__vitoria {}
+    
+            .vitoria__titulo {
+                font-size: 4.8rem;
+            }
+            
+            .vitoria__subtitulo {
+                font-size: 4.2rem;
+            }
+            
+                .subtitulo__destaque {}
+            .vitoria__botao {}
+        .principal__chute {}
+    
+            .chute__titulo {
+                font-size: 4.2rem;
+            }
+    
+                .titulo--inicial {}
+            .chute__escolha {}
+    
+            .chute__resultado {
+                font-size: 3.2rem;
+            }
+    
+                .resultado__numero {}
+    .rodape {}
+    
+        .rodape__resultado {
+            font-size: 3.8rem;
+        }
+    
+            .resultado--menor, .resultado--maior {}
+}
+
+@media screen and (min-width: 1200px) {
+    .corpo {}
+    
+    .cabecalho {}
+    
+        .cabecalho__titulo {
+            font-size: 5.2rem;
+        }
+    
+        .cabecalho__jogador {
+            font-size: 4.8rem;
+        }
+    
+    .principal {}
+        .principal__prejogo {}
+            .prejogo__formulario {}
+
+                .formulario__titulo {
+                    font-size: 5.4rem;
+                }
+
+                .formulario__label {}
+    
+                    .label__titulo {
+                        font-size: 3.8rem;
+                    }
+    
+                    .label__input {}
+                .formulario__botao {}
+        .principal__vitoria {}
+    
+            .vitoria__titulo {
+                font-size: 5.4rem;
+            }
+            
+            .vitoria__subtitulo {
+                font-size: 4.8rem;
+            }
+            
+                .subtitulo__destaque {}
+            .vitoria__botao {}
+        .principal__chute {}
+    
+            .chute__titulo {
+                font-size: 4.8rem;
+            }
+    
+                .titulo--inicial {}
+            .chute__escolha {}
+    
+            .chute__resultado {
+                font-size: 3.8rem;
+            }
+    
+                .resultado__numero {}
+    .rodape {}
+    
+        .rodape__resultado {
+            font-size: 4.2rem;
+        }
+    
+            .resultado--menor, .resultado--maior {}
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: .75vw;
+    }
+}

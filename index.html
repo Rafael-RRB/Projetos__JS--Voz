@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+        --><link rel="stylesheet" href="css/index.css">
+        <title>Número Secreto</title>
+    </head>
+
+    <body class="corpo">
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">número secreto</h1>
+            <h2 class="cabecalho__jogador">Vez do jogador <span data-js="jogador">1</span></h2>
+        </header>
+
+        <main class="principal">
+            <section class="principal__prejogo" data-js="prejogo">
+                <form class="prejogo__formulario">
+                    <h2 class="formulario__titulo">Configurações</h2>
+
+                    <label class="formulario__label">
+                        <span class="label__titulo">Quantos jogadores? (2 ~ 4)</span>
+                        <input type="number" min="2" max="4" step="1" value="2" class="label__input" data-js="quantJogadores">
+                    </label>
+                    
+                    <label class="formulario__label">
+                        <span class="label__titulo">Quantos números? (3 ~ 10000)</span>
+                        <input type="number" min="3" max="10000" value="1000" class="label__input" data-js="quantNumero">
+                    </label>
+
+                    <button class="formulario__botao" data-js="botaoIniciar">Começar!</button>
+                </form>
+            </section>
+
+            <section class="principal__vitoria data-js__hide" data-js="telaVitoria">
+                <h2 class="vitoria__titulo">Fim do jogo!</h2>
+                <h3 class="vitoria__subtitulo">O jogador <span class="subtitulo__destaque" data-js="vencedor">0</span> venceu</h3>
+
+                <button class="vitoria__botao" data-js="recomeca">Jogar novamente?</button>
+            </section>
+
+            <section class="principal__chute data-js__hide" data-js="principal">
+                <h2 class="chute__titulo data-js__hide" data-js="chuteTitulo1">Você chutou:</h2>
+                <h3 class="chute__titulo titulo--inicial" data-js="chuteTitulo2">Fale um número para começar!</h3>
+                <p class="chute__escolha data-js__hide" data-js="escolha">0</p>
+                <p class="chute__resultado data-js__hide" data-js="chuteResultado">O número secreto é <span class="resultado__numero" data-js="resultadoMaior">maior <i class="fa-solid fa-arrow-up" data-js="simboloMaior"></i></span> <span class="resultado__numero" data-js="resultadoMenor">menor<i class="fa-solid fa-arrow-down" data-js="simboloMenor"></i></span>!</p>
+            </section>
+        </main>
+        
+        <footer class="rodape">
+            <h2 class="rodape__resultado">
+                O número secreto está entre <span class="resultado--menor" data-js="segredoMenor">0</span> e <span class="resultado--maior" data-js="segredoMaior">100</span>!
+            </h2>
+        </footer>
+
+        <script src="js/index.js" type="module"></script>
+    </body>
+</html>
