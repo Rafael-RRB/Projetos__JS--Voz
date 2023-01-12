@@ -47,7 +47,7 @@ const resultados = {
 
 const recognition = new SpeechRecognition();
 recognition.lang = "pt-Br";
-recognition.interimResults = true;
+recognition.interimResults = false;
 recognition.continuous = true;
 recognition.addEventListener("result", onSpeak);
 
