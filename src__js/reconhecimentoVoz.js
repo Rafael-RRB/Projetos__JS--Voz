@@ -2,8 +2,8 @@ import { numeroAleatorio } from "./numeroAleatorio.js";
 
 // Preloads
 // Audio
-window.somErro = new Audio("/se/419023__jacco18__acess-denied-buzz.mp3");
-window.somAcerto = new Audio("/se/538149__fupicat__notification.wav");
+window.somErro = new Audio("./se/419023__jacco18__acess-denied-buzz.mp3");
+window.somAcerto = new Audio("./se/538149__fupicat__notification.wav");
 
 // Isso reseta o audio, evitando que ações "pule" os efeitos sonoros.
 window.tocaAudio = audio => {
@@ -47,7 +47,7 @@ const resultados = {
 
 const recognition = new SpeechRecognition();
 recognition.lang = "pt-Br";
-recognition.interimResults = false;
+recognition.interimResults = true;
 recognition.continuous = true;
 recognition.addEventListener("result", onSpeak);
 
@@ -74,6 +74,7 @@ function resetaInicio() {
 // Função executada quando há um resultado de voz
 function onSpeak(event) {
     recognition.stop();
+    console.log(event.results[0][0]);
     let transcriptArray = event.results[0][0].transcript.split(" ");
 
     for(let i = 0; i < transcriptArray.length; i++) {
